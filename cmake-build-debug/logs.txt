@@ -1,0 +1,1 @@
+[trace][45:45:30] command_add_collection::can_execute(std::string const &request) called
