@@ -27,7 +27,7 @@ public:
             try
             {
                 _pool_allocator_type = string_to_allocator_type(result_parsed_strings[1]);
-            } catch (doesnt_exist())
+            } catch (doesnt_exist(&))
             {
                 return false;
             }
@@ -35,7 +35,7 @@ public:
             try
             {
                 _pool_allocator_allocation_mode = allocation_mode_convert(result_parsed_strings[3]);
-            } catch (doesnt_exist())
+            } catch (doesnt_exist(&))
             {
                 return false;
             }
@@ -43,7 +43,7 @@ public:
             try
             {
                 _pool_allocator_size = is_unsigned_with_convert(result_parsed_strings[2]);
-            } catch(doesnt_exist())
+            } catch(doesnt_exist(&))
             {
                 return false;
             }

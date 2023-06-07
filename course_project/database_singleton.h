@@ -41,6 +41,7 @@ public:
 
         return _instance;
     }
+
 private:
     associative_container<std::string, std::pair<associative_container<std::string,
     associative_container<std::string, associative_container<std::pair<int, int>,
@@ -70,7 +71,7 @@ public:
             allocator_type pool_allocator_type,
             unsigned int pool_allocator_size,
             memory::allocation_mode pool_allocator_allocation_mode,
-            tree_type tree_type, )
+            tree_type tree_type)
     {
         try {
             memory *allocator = nullptr;
@@ -111,7 +112,10 @@ public:
 
             }
         }
-        catch (search_tree<std::string, std::pair<associative_container<std::string, associative_container<std::string, associative_container<std::pair<int, int>, delivery_info *> *> *> *, memory *>, stdstring_comparer>::insertion_exception const &ex)
+
+        catch (search_tree<std::string, std::pair<associative_container<std::string,
+                associative_container<std::string, associative_container<std::pair<int, int>,
+                student_definition *> *> *> *, memory *>, stdstring_comparer>::insertion_exception const &ex)
         {
             // TODO: ?!
         }

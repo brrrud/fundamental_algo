@@ -19,22 +19,27 @@ public:
         logger_singleton::get_instance()->get_logger()->log("command_add_data::can_execute(std::string const &request) called", logger::severity::trace);
         if(!prefix_validation("ADD_DATA", request)) return false;
         std::vector<std::string>result_parsed_strings = validation("ADD_DATA", request);
-        if(result_parsed_strings.size() == 3)
+        if(result_parsed_strings.size() == 13)
         {
             _pool_name = std::move(result_parsed_strings[0]);
             _scheme_name = std::move(result_parsed_strings[1]);
             _collection_name = std::move(result_parsed_strings[2]);
+
             _current_student._values.student_name = std::move(result_parsed_strings[3]);
             _current_student._values.student_surname = std::move(result_parsed_strings[4]);
             _current_student._values.student_patronymic = std::move(result_parsed_strings[5]);
+
             _current_student._values.tutor_name = std::move(result_parsed_strings[6]);
             _current_student._values.tutor_surname = std::move(result_parsed_strings[7]);
             _current_student._values.tutor_patronymic = std::move(result_parsed_strings[8]);
-            //_current_student._reporting_format = reporting_format_convert(result_parsed_strings[9]);
-            _current_student.keys.
-            _current_student._values.event_grade = is_valid_grade(_current_student._reporting_format,
-                                                                  result_parsed_strings[10]);
 
+            std::get<0>(_current_student.keys) = is_unsigned_with_convert(result_parsed_strings[9]); //session id
+            std::get<1>(_current_student.keys) = is_unsigned_with_convert(result_parsed_strings[10]); //student id
+            std::get<2>(_current_student.keys) = reporting_format_convert(result_parsed_strings[11]);
+
+            _current_student._values.event_grade = is_valid_grade(std::get<2>(_current_student.keys), result_parsed_strings[12]);
+            _current_student._values.event_day = result_parsed_strings[13]; //TODO: validate
+            _current_student._values.event_day = result_parsed_strings[14]; //TODO: validate
             return true;
         }
         return false;

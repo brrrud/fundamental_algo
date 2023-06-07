@@ -20,7 +20,6 @@ public:
         tvalue value;
 
     };
-
 public:
 
     virtual ~associative_container() noexcept = default;
@@ -73,18 +72,14 @@ void associative_container<tkey, tvalue>::operator+=(
     insert(to_insert.first, std::move(to_insert.second));
 }
 
-template<
-    typename tkey,
-    typename tvalue>
+template<typename tkey, typename tvalue>
 tvalue const &associative_container<tkey, tvalue>::operator[](
     tkey const &key)
 {
     return get(key);
 }
 
-template<
-    typename tkey,
-    typename tvalue>
+template<typename tkey, typename tvalue>
 tvalue associative_container<tkey, tvalue>::operator-=(
     tkey const &key)
 {

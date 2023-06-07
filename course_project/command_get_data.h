@@ -5,6 +5,7 @@
 #include "../logger/logger.h"
 #include "command.h"
 #include "parse.h"
+
 class command_get_data final : public command<std::string>
 {
 private:

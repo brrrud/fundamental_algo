@@ -17,7 +17,6 @@ public:
 
     bool can_execute(std::string const &request) noexcept final
     {
-
         logger_singleton::get_instance()->get_logger()->log("command_add_collection::can_execute(std::string const &request) called", logger::severity::trace);
         if(!prefix_validation("ADD_COLLECTION", request)) return false;
         std::vector<std::string> result_parsed_strings = validation("ADD_COLLECTION", request);

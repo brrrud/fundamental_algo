@@ -24,12 +24,10 @@ protected:
 
     struct search_tree_node
     {
-
         typename associative_container<tkey, tvalue>::key_value_pair *keys_and_values;
         search_tree_node **subtrees;
         unsigned int involved_keys;
         unsigned int min_keys_count;
-
     public:
 
         virtual ~search_tree_node() noexcept = default;

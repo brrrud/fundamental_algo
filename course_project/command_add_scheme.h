@@ -4,6 +4,7 @@
 #include "command.h"
 #include "logger_singleton.h"
 #include "parse.h"
+
 class command_add_scheme final : public command<std::string>
 {
 private:
@@ -30,4 +31,5 @@ public:
         logger_singleton::get_instance()->get_logger()->log("command_add_scheme::execute(std::string const &request) called", logger::severity::trace);
     }
 };
+
 #endif //FUNDAMENTAL_ALGO_COMMAND_ADD_SCHEME_H

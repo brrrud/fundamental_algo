@@ -25,8 +25,9 @@ public:
     request_handler_with_command(request_handler_with_command &&) = delete;
     request_handler_with_command &operator=(request_handler_with_command const &) = delete;
     request_handler_with_command &operator=(request_handler_with_command &&) = delete;
+
 public:
-    bool handle(trequest const &request) const noexcept final
+    bool handle(trequest const &request) const noexcept
     {
 
         if (!_target_action->can_execute(request))

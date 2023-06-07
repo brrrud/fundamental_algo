@@ -1,12 +1,13 @@
 # ninja log v5
-6	862	1685835208032765214	CMakeFiles/fundamental_algo.dir/logger/logger_concrete.cpp.o	8c2c25df7155b295
-5	1364	1685835208534522800	CMakeFiles/fundamental_algo.dir/logger/logger_builder_concrete.cpp.o	86147dacdfd96783
-663	1004	1685835208176759817	CMakeFiles/fundamental_algo.dir/memory/list_memory.cpp.o	ebe8dc56f6862c05
-290	327	1685846729785134031	fundamental_algo	958bebd4d03d215
-4	290	1685846729747149834	CMakeFiles/fundamental_algo.dir/main.cpp.o	3048b6a2f9391476
-662	978	1685835208149325240	CMakeFiles/fundamental_algo.dir/memory/memory.cpp.o	4402c8aa4049e00b
-3	57	1686094412296707537	build.ninja	f137a7bc2e05177f
-5	662	1685835207831616453	CMakeFiles/fundamental_algo.dir/logger/logger_holder.cpp.o	282a3487fba1e473
-6	662	1685835207831546829	CMakeFiles/fundamental_algo.dir/logger/logger_builder.cpp.o	b37cb66b20c967fa
-6	663	1685835207831529830	CMakeFiles/fundamental_algo.dir/logger/logger.cpp.o	542cce75e154d4d5
-663	970	1685835208142037280	CMakeFiles/fundamental_algo.dir/memory/global_heap_allocator.cpp.o	41d6c566e67b6c15
+1190	1225	1686095738124537443	fundamental_algo	958bebd4d03d215
+5	474	1686095737369805905	CMakeFiles/fundamental_algo.dir/main.cpp.o	3048b6a2f9391476
+0	6	0	clean	3c8e6cc385ee00ba
+420	804	1686095737700780476	CMakeFiles/fundamental_algo.dir/memory/global_heap_allocator.cpp.o	41d6c566e67b6c15
+0	55	1686119320812142457	build.ninja	f137a7bc2e05177f
+386	759	1686095737655324983	CMakeFiles/fundamental_algo.dir/memory/memory.cpp.o	4402c8aa4049e00b
+7	418	1686095737314735925	CMakeFiles/fundamental_algo.dir/logger/logger.cpp.o	542cce75e154d4d5
+6	419	1686095737315516687	CMakeFiles/fundamental_algo.dir/logger/logger_builder.cpp.o	b37cb66b20c967fa
+6	588	1686095737483828242	CMakeFiles/fundamental_algo.dir/logger/logger_concrete.cpp.o	8c2c25df7155b295
+6	386	1686095737280158518	CMakeFiles/fundamental_algo.dir/logger/logger_holder.cpp.o	282a3487fba1e473
+418	789	1686095737685862543	CMakeFiles/fundamental_algo.dir/memory/list_memory.cpp.o	ebe8dc56f6862c05
+6	1190	1686095738085566386	CMakeFiles/fundamental_algo.dir/logger/logger_builder_concrete.cpp.o	86147dacdfd96783

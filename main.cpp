@@ -1,12 +1,13 @@
 #include <iostream>
-#include "logger/logger.h"
-#include "logger/logger_builder.h"
-#include "course_project/logger_singleton.h"
-#include "memory/list_memory.h"
-#include "memory.h"
-#include "memory/global_heap_allocator.h"
-#include <vector>
-#include "course_project/command_add_collection.h"
+//#include "logger/logger.h"
+//#include "logger/logger_builder.h"
+//#include "course_project/logger_singleton.h"
+//#include "memory/list_memory.h"
+//#include "memory.h"
+//#include "memory/global_heap_allocator.h"
+//#include <vector>
+//#include "course_project/command_add_collection.h"
+//#include "course_project/file_reader.h"
 
 //void memory_global_heap_demo()
 //{
@@ -45,7 +46,7 @@
 //}
 
 
-int main() {
-    ifstream
+int main(int argc, char* argv[]) {
+
     return 0;
 }

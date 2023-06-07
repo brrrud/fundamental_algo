@@ -9,7 +9,8 @@
 template<typename trequest> class abstract_handler
 {
     friend class request_handler_with_command_chain<trequest>;
-protected:
+
+public:
     abstract_handler<trequest> *_next_handler;
 public:
     abstract_handler()
