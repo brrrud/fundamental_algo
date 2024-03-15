@@ -143,7 +143,7 @@ private:
                     iterator = (*iterator)->subtrees + i + 1;
                     gone_to_subtree = true;
 
-                    // TODO: add while to find min key in right subtree
+                   
 
                     break;
                 }
@@ -386,7 +386,7 @@ public:
             throw typename search_tree<tkey, tvalue, tkey_comparer>::removing_exception();
         }
 
-        //auto *
+    
         throw not_implemented("not implemented");
     }
 
